@@ -34,7 +34,7 @@ class FormController extends Controller
 
         try {
             //Ejemplo
-            $response = $this->callOpenAI($request->input('message', 'Quiero un formulario para la controlar los invitados de mi fiesta de cumpleaños'));
+            $response = $this->callOpenAI($request->input('message', 'Quiero un formulario para la controlar los invitados de la inaguración de mi restaurante'));
 
             if ($response->failed()) {
                 return $this->handleUpstreamError($response);
